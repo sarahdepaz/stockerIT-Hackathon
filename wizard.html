@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>stockerIT</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/stockerIT_logo.jpg" />
+	<link rel="icon" type="image/png" href="assets/img/stockerIT_logo.jpg" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+</head>
+
+<header>
+    <!-- Intro settings -->
+    <style>
+      /*nav bar */
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+        margin: 12px;
+      }
+        li.nav-item {
+            width: 90px;
+        }
+        .navbar .navbar-nav > li > a {
+            color: inherit;
+            padding-top: 17px;
+            padding-bottom: 15px;
+            font-weight: 400;
+            margin-top: 44px;
+            font-size: 18px;
+            text-transform: uppercase;
+           
+			border-radius: 3px;
+        }
+		nav.navbar.navbar-expand-lg.navbar-light.bg-white.fixed-top {
+   	 margin-bottom: 0;
+}
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+		<div class="container-fluid">
+		  <!-- Navbar brand -->
+		  <a class="navbar-brand" target="_blank" href="#">
+			<img src="assets/img/stockerIT_logo.jpg" height="40" alt="" loading="lazy"
+			  style="margin-top: -3px;" />
+		  </a>
+		  <div class="collapse navbar-collapse" id="navbarExample01">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item active">
+				<a class="nav-link" aria-current="page" href="#intro">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="blog.html" rel="nofollow"
+				 >Blog</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="">About Us</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+    <!-- Navbar -->
+  </header>
+
+<body>
+	<div class="image-container set-full-height" style="background-image: url('assets/img/stock-chart.png')">
+
+		<!--  Made With Material Kit  -->
+		<a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard" class="made-with-mk">
+			<div class="brand">MK</div>
+			<div class="made-with">Made with <strong>Material Kit</strong></div>
+		</a>
+
+	    <!--   Big container   -->
+	    <div class="container">
+	        <div class="row">
+		        <div class="col-sm-8 col-sm-offset-2">
+		            <!--      Wizard container        -->
+		            <div class="wizard-container">
+		                <div class="card wizard-card" data-color="purple" id="wizard">
+			                <form action="" method="">
+			                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
+
+		                    	<div class="wizard-header">
+		                        	<h3 class="wizard-title">
+		                        		Let's get to know you better...
+		                        	</h3>
+		                    	</div>
+								<div class="wizard-navigation">
+									<ul>
+			                            <li><a href="#step1" data-toggle="tab">Step 1</a></li>
+			                            <li><a href="#step2" data-toggle="tab">Step 2</a></li>
+			                            <li><a href="#step3" data-toggle="tab">Step 3</a></li>
+			                            <li><a href="#step4" data-toggle="tab">Step 4</a></li>
+			                        </ul>
+								</div>
+
+		                        <div class="tab-content">
+		                            <div class="tab-pane" id="step1">
+										<h4 class="info-text">Do you want to sign up as an investor or as a mentor? </h4>
+		                                <div class="row">
+		                                    <div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="col-sm-4 col-sm-offset-2">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to be an Investor.">
+		                                                <input type="radio" name="type" value="Investor">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">child_care</i>
+		                                                </div>
+		                                                <h6>Investor</h6>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="Select this option if you want to be a Mentor">
+		                                                <input type="radio" name="type" value="Mentor">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">school</i>
+		                                                </div>
+		                                                <h6>Mentor</h6>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="step2">
+		                                <h4 class="info-text">How much money would you like to invest? </h4>
+		                                <div class="row">
+		                                    <div class="col-sm-10 col-sm-offset-1">
+													<div class="slidecontainer">
+														<input id="slider" type="range" min="1000" max="50000" value="50" oninput="sliderChange(this.value)">
+		                                        	</div>
+													<p id="min_val">1,000₪</p>
+													<p id="max_val">50,000₪</p>
+													<div id="sliderValue" class="col-sm-2 col-sm-offset-4">
+													<div id="sliderVal"> </div>
+													</div>
+
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="step3">
+		                                <h4 class="info-text">From 1 to 6 how much of a risk taker are you? </h4>
+		                                <div class="row">
+											<div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="col-sm-2 col-sm-offset-2">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="">
+		                                                <input type="radio" name="type" value="Investor">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">filter_1</i>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-2">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="">
+		                                                <input type="radio" name="type" value="">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">filter_2</i>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+													<div class="col-sm-2">
+														<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="">
+															<input type="radio" name="type" value="">
+															<div class="icon">
+																<i class="material-icons">filter_3</i>
+															</div>
+														</div>
+													</div>
+											</div>
+											<div class="col-sm-10 col-sm-offset-1">
+		                                        <div class="col-sm-2 col-sm-offset-2">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title="">
+		                                                <input type="radio" name="type" value="Investor">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">filter_4</i>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-2">
+		                                            <div class="choice" data-toggle="wizard-radio" rel="tooltip" title=""">
+		                                                <input type="radio" name="type" value="">
+		                                                <div class="icon">
+		                                                    <i class="material-icons">filter_5</i>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+													<div class="col-sm-2">
+														<div class="choice" data-toggle="wizard-radio" rel="tooltip" title="">
+															<input type="radio" name="type" value="">
+															<div class="icon">
+																<i class="material-icons">filter_6</i>
+															</div>
+														</div>
+													</div>
+											</div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="step4">
+		                                <div class="row">
+		                                    <h4 class="info-text">In how many years you want to see a return of investments? </h4>
+		                                    <div class="col-sm-6 col-sm-offset-5">
+												<div class="dropdown">
+													<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Years
+													<span class="caret"></span></button>
+													<ul class="dropdown-menu">
+													  <li><a href="#">1-2</a></li>
+													  <li><a href="#">3-5</a></li>
+													  <li><a href="#">5-10</a></li>
+													  <li><a href="#">10+</a></li>
+													</ul>
+												</div>
+											</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wizard-footer">
+	                            	<div class="pull-right">
+	                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+	                                    <a href="profiles.html"><input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish'/></a>
+	                                </div>
+	                                <div class="pull-left">
+	                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+	                                </div>
+		                            <div class="clearfix"></div>
+		                        </div>
+			                </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	        </div> <!-- row -->
+	    </div> <!--  big container -->
+
+	    
+
+</body>
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/material-bootstrap-wizard.js"></script>
+
+	<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js"></script>
+
+</html>
